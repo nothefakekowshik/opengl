@@ -1,2 +1,2 @@
 # opengl
-CGA - lab exercises
+## CGA - lab exercises
