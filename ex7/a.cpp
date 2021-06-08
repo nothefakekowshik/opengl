@@ -136,19 +136,19 @@ void display()
     glColor3f(1.0,0.0,0.0);
     //bres(120,20,340,250);
     glBegin(GL_LINES);
-    glVertex2d (x0, y0);
-    glVertex2d (x1, y1);
-    glVertex2d (60,20);
-    glVertex2d (80,120);
+        glVertex2d (x0, y0);
+        glVertex2d (x1, y1);
+        glVertex2d (60,20);
+        glVertex2d (80,120);
     glEnd();
 
     //draw a blue colored window
     glColor3f(0.0, 0.0, 1.0);
     glBegin(GL_LINE_LOOP);
-    glVertex2f(xmin, ymin);
-    glVertex2f(xmax, ymin);
-    glVertex2f(xmax, ymax);
-    glVertex2f(xmin, ymax);
+        glVertex2f(xmin, ymin);
+        glVertex2f(xmax, ymin);
+        glVertex2f(xmax, ymax);
+        glVertex2f(xmin, ymax);
     glEnd();
     CohenSutherlandLineClipAndDraw(x0,y0,x1,y1);
     CohenSutherlandLineClipAndDraw(60,20,80,120);
